@@ -1,0 +1,61 @@
+/*
+Lab9A
+Section 16
+Indiana Jones
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n1 = 0;
+	int n2 = 0;
+	int n3 = 0;
+	int ma;
+	int mi;
+	double avg;
+  double sum;
+
+	cout << "Enter number 1: ";
+	cin >> n1;
+
+	cout << endl << "Enter number 2: ";
+	cin >> n2;
+
+	cout << endl << "Enter number 3: ";
+	cin >> n3;
+
+	if(n1 > n2){
+    if(n1 > n3)
+    ma = n1;
+    else
+    ma = n3;
+  }
+  else if(n2 > n3){
+    ma = n2;
+  }
+  else
+   ma = n3;
+
+
+
+	if(n1 < n2){
+    if(n1 < n3)
+    mi = n1;
+    else
+    mi = n3;
+  }
+  else if(n2 < n3){
+    mi = n2;
+  }
+  else
+   mi = n3;
+
+
+	sum = (n1 + n2 + n3);
+	avg = sum / 3;
+
+	cout << endl << "Min is " << mi << endl;
+	cout << endl << "Max is " << ma << endl;
+	cout << endl << "Average is " << avg << endl;
+}
